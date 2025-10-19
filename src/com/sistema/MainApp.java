@@ -15,7 +15,16 @@ public class MainApp {
                 LocalDate.now()
         );
 
+        Emprestimo emprestimo = new Emprestimo(
+                1,
+                livro,
+                "João Silva",
+                LocalDate.now(),
+                null // ainda não devolvido
+        );
+
         System.out.println(autor);
         System.out.println(livro);
+        System.out.println(emprestimo);
     }
 }
